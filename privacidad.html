@@ -5,18 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Política de Privacidad - AmperBall</title>
 <style>
-  body { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background:#0f172a; color:#e2e8f0; margin:0; padding:0; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background:#ffffff; color:#333333; margin:0; padding:0; }
   .wrap { max-width: 820px; margin: 0 auto; padding: 24px 20px 64px; }
   header { text-align:center; padding: 32px 0 8px; }
   header img { width:96px; height:96px; border-radius:24px; }
-  h1 { color:#ffd351; font-size:1.6em; margin:12px 0 4px; }
-  .sub { color:#94a3b8; }
-  h2 { color:#ffd351; font-size:1.15em; margin-top:32px; border-bottom:1px solid #1e293b; padding-bottom:6px; }
-  p, li { line-height:1.65; font-size:0.98em; color:#cbd5e1; }
-  a { color:#7dd3fc; }
-  strong { color:#f8fafc; }
-  .card { background:#111c33; border:1px solid #1e293b; border-radius:14px; padding:18px 20px; margin-top:16px; }
-  .muted { color:#94a3b8; font-size:0.9em; }
+  h1 { color:#0c3d54; font-size:1.6em; margin:12px 0 4px; }
+  .sub { color:#777777; }
+  h2 { color:#0c3d54; font-size:1.15em; margin-top:32px; border-bottom:1px solid #e8e8e8; padding-bottom:6px; }
+  p, li { line-height:1.65; font-size:0.98em; color:#333333; }
+  a { color:#125a73; }
+  strong { color:#222222; }
+  .card { background:#ffffff; border:1px solid #e8e8e8; border-radius:14px; padding:18px 20px; margin-top:16px; }
+  .note { background:#ededed; border:1px solid #e8e8e8; border-radius:14px; padding:16px 20px; margin-top:16px; }
+  .muted { color:#777777; font-size:0.9em; }
 </style>
 </head>
 <body>
@@ -25,69 +26,96 @@
   <header>
     <img src="logo.png" alt="AmperBall">
     <h1>Política de Privacidad de AmperBall</h1>
-    <p class="sub">Última actualización: 23 de octubre de 2026</p>
+    <p class="sub">Última actualización: 11 de noviembre de 2026</p>
   </header>
 
   <div class="card">
     <p><strong>Responsable:</strong> MARIO (mabero06), desarrollador y editor de la aplicación AmperBall, distribuida a través de Google Play.</p>
-    <p><strong>Contacto:</strong> la dirección de correo electrónico publicada en la ficha de AmperBall en Google Play.</p>
+    <p><strong>Contacto:</strong> <a href="mailto:mabero06k@gmail.com">mabero06k@gmail.com</a></p>
   </div>
 
   <div class="card">
-    <h2>1. Qué datos trata AmperBall</h2>
-    <p>AmperBall es una <strong>aplicación nativa distribuida a través de Google Play</strong>: no tiene servidores propios, no permite cuentas en línea y <strong>no recopila datos personales a través de redes propias</strong>.</p>
-    <p>Los datos de uso de la aplicación se guardan <strong>exclusivamente en el dispositivo del usuario</strong> (almacenamiento local del navegador/WebView):</p>
+    <h2>1. Cuenta de AmperBall</h2>
+    <p>Para usar AmperBall el usuario crea una cuenta con <strong>correo electrónico, nombre de usuario y contraseña</strong>. La gestión de la cuenta se realiza con <strong>Firebase Authentication</strong>, un servicio de Google LLC / Google Ireland Limited.</p>
+    <p>En los servidores de Firebase se guardan:</p>
     <ul>
-      <li>Nombre de usuario que el usuario elige para identificarse en el dispositivo.</li>
-      <li>Progreso del juego: bolas superadas, resultados, racha, protectores y logros.</li>
-      <li>Avatar: si el usuario elige una foto, esta se guarda como imagen local en el dispositivo y <strong>no se envía a ningún servidor</strong>.</li>
-      <li>Preferencias (por ejemplo, la elección de anuncios personalizados o no).</li>
-      <li>Contraseña de la cuenta local: se guarda <strong>solo en forma de hash SHA-256 con sal aleatoria</strong>. AmperBall no almacena ni transmite contraseñas legibles.</li>
+      <li><strong>Correo electrónico</strong>, para identificar la cuenta e iniciar sesión.</li>
+      <li><strong>Nombre de usuario</strong>, elegido por el alumno y visible dentro de la app.</li>
+      <li><strong>Contraseña</strong>: la almacena y gestiona Firebase de forma cifrada. AmperBall nunca recibe ni puede leer la contraseña.</li>
     </ul>
-    <p>Si desinstala la aplicación (o borra sus datos), toda esta información queda eliminada del dispositivo. AmperBall no accede a la cámara, al micrófono, a la ubicación ni al almacenamiento externo.</p>
+    <p>Estos datos se tratan para crear la cuenta, autenticar al usuario y mantener su acceso. No se venden ni se ceden a terceros ajenos a la prestación del servicio.</p>
+    <p>Base jurídica: ejecución de la relación de uso de la aplicación y consentimiento del usuario al crear la cuenta.</p>
   </div>
 
   <div class="card">
-    <h2>2. Publicidad (Google AdMob)</h2>
-    <p>AmperBall puede mostrar publicidad a través de <strong>Google AdMob</strong>, un servicio prestado por Google Ireland Limited / Google LLC. En ese caso Google actúa como responsable del tratamiento de los datos asociados a la publicidad.</p>
-    <p>Google puede recopilar y tratar, entre otros, los <strong>identificadores de publicidad de Google (Advertising ID)</strong>, datos técnicos del dispositivo y datos de interacción con los anuncios. Podrá consultar cómo Google trata estos datos en:</p>
+    <h2>2. Datos que se guardan en el dispositivo</h2>
+    <p>El progreso de aprendizaje se guarda <strong>únicamente en el dispositivo</strong>, asociado al nombre de usuario:</p>
+    <ul>
+      <li>Progreso del juego: bolas superadas, resultados, racha, protectores y logros.</li>
+      <li>Avatar: si el usuario elige una foto, se guarda como imagen local y no se envía a Firebase.</li>
+      <li>Preferencias, como el tema claro/oscuro o la elección de anuncios personalizados.</li>
+    </ul>
+    <p>Si se desinstala la app o se borran sus datos, esta información local desaparece del dispositivo.</p>
+  </div>
+
+  <div class="card">
+    <h2>3. Publicidad (Google AdMob)</h2>
+    <p>AmperBall muestra publicidad a través de <strong>Google AdMob</strong>, un servicio prestado por Google Ireland Limited / Google LLC. Google actúa como responsable del tratamiento de los datos asociados a la publicidad.</p>
+    <p>Google puede recopilar y tratar, entre otros, el <strong>identificador de publicidad de Android (Advertising ID)</strong>, datos técnicos del dispositivo y datos de interacción con los anuncios. Podrá consultar cómo los trata en:</p>
     <ul>
       <li>Privacidad de Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
       <li>Cómo usa Google la información de sitios o apps que usan sus servicios: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">https://policies.google.com/technologies/partner-sites</a></li>
     </ul>
-    <p><strong>Anuncios personalizados:</strong> en el primer uso de la aplicación se muestra una pantalla de consentimiento en la que el usuario puede activar o desactivar la publicidad personalizada. Los anuncios no personalizados usan menos datos (no usan el identificador publicitario para personalización).</p>
-    <p>El usuario puede gestionar o revocar su elección en cualquier momento: borrando y volviendo a abrir la aplicación (se mostrará de nuevo la pantalla de consentimiento) o desde <a href="https://adssettings.google.com" target="_blank" rel="noopener">https://adssettings.google.com</a> (Configuración de anuncios de Google).</p>
-    <p>El anuncio recompensado ("ver un anuncio para recuperar energía") es opcional: existe siempre la alternativa de continuar la aplicación sin ver publicidad.</p>
+    <p><strong>Anuncios personalizados:</strong> en el primer uso se muestra el consentimiento de Google (UMP), donde el usuario decide si acepta publicidad personalizada. Puede cambiar o retirar su elección desde el menú de la app (Ajustes de privacidad) o desde <a href="https://adssettings.google.com" target="_blank" rel="noopener">https://adssettings.google.com</a>.</p>
+    <p>El anuncio recompensado para recuperar una vida solo concede la vida cuando se visualiza completo. El usuario siempre puede continuar sin verlo volviendo a empezar la bola o dejándola para otro momento.</p>
   </div>
 
   <div class="card">
-    <h2>3. Permisos de la aplicación</h2>
-    <p>AmperBall solo necesita el permiso <strong>INTERNET</strong> (para cargar el contenido de la aplicación y, en su caso, los anuncios). No se solicitan permisos de cámara, micrófono, ubicación, almacenamiento, contactos, ni recepción del arranque del sistema.</p>
+    <h2>4. Permisos de la aplicación</h2>
+    <p>AmperBall solo necesita el permiso <strong>INTERNET</strong> para cargar la aplicación, la cuenta y los anuncios. La app no accede a la cámara, al micrófono, a la ubicación, a los contactos ni al almacenamiento externo.</p>
+    <p>Si el usuario elige una foto para su avatar, la selecciona manualmente mediante el selector del sistema; la imagen se guarda solo en el dispositivo.</p>
   </div>
 
   <div class="card">
-    <h2>4. Menores de edad</h2>
-    <p>AmperBall está dirigida a estudiantes y profesionales del sector eléctrico (REBT, fotovoltaica, domótica y electrónica). No está dirigida de forma deliberada a menores de 13 años y no recopilamos datos de menores a sabiendas. Si usted es un padre, madre o tutor y considera que un menor ha hecho uso de la aplicación, contacte con nosotros para tomar las medidas oportunas.</p>
-  </div>
-
-  <div class="card">
-    <h2>5. Sus derechos</h2>
-    <p>Dado que AmperBall no recopila datos personales en servidores propios, sus datos nunca salen de su dispositivo y usted conserva el control completo sobre ellos.</p>
+    <h2>5. Conservación y eliminación de la cuenta</h2>
+    <p>Los datos de la cuenta se conservan mientras la cuenta esté activa. Para eliminarla:</p>
     <ul>
-      <li><strong>Acceso, rectificación y supresión:</strong> puede consultar y modificar sus datos desde la propia aplicación, y eliminarlos desinstalando la app o borrando sus datos desde los ajustes del dispositivo.</li>
-      <li><strong>Publicidad:</strong> puede desactivar la publicidad personalizada desde la pantalla de consentimiento (borrando datos de la aplicación) o mediante las herramientas de Google indicadas en el apartado 2.</li>
-      <li><strong>Reclamaciones:</strong> si reside en la Unión Europea, puede dirigirse a la Agencia Española de Protección de Datos (www.aepd.es).</li>
+      <li><strong>Desde la app:</strong> perfil → <strong>Eliminar cuenta</strong>. Se borran la cuenta de Firebase, el correo, el nombre de usuario y los datos locales de progreso y avatar del dispositivo.</li>
+      <li><strong>Sin acceso a la app:</strong> siga las instrucciones de <a href="eliminar-cuenta.html">esta página de eliminación de cuenta</a> o escriba a <a href="mailto:mabero06k@gmail.com">mabero06k@gmail.com</a> desde el correo registrado.</li>
+    </ul>
+    <p>Las solicitudes recibidas por correo se atienden en un plazo máximo de 30 días.</p>
+    <p>Los datos publicitarios que Google haya podido tratar conforme a su propia política no están vinculados a la cuenta de AmperBall y se rigen por las herramientas de privacidad de Google.</p>
+  </div>
+
+  <div class="card">
+    <h2>6. Menores de edad</h2>
+    <p>AmperBall está dirigida a estudiantes y profesionales del sector eléctrico (REBT, fotovoltaica, domótica y electrónica). No está dirigida a menores de 14 años y no se crean cuentas de menores de esa edad de forma consciente. Si usted es padre, madre o tutor y cree que un menor ha creado una cuenta, escriba a <a href="mailto:mabero06k@gmail.com">mabero06k@gmail.com</a> para eliminarla.</p>
+  </div>
+
+  <div class="card">
+    <h2>7. Sus derechos</h2>
+    <p>Puede solicitar el acceso, la rectificación o la supresión de sus datos, así como oponerse a su tratamiento, escribiendo a <a href="mailto:mabero06k@gmail.com">mabero06k@gmail.com</a>.</p>
+    <ul>
+      <li><strong>Acceso y rectificación:</strong> puede consultar y modificar su usuario desde la app.</li>
+      <li><strong>Supresión:</strong> desde la app o mediante la página de eliminación de cuenta.</li>
+      <li><strong>Publicidad:</strong> puede gestionar la publicidad personalizada desde los ajustes de privacidad de la app o de Google.</li>
+      <li><strong>Reclamaciones:</strong> si reside en la Unión Europea, puede dirigirse a la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a>).</li>
     </ul>
   </div>
 
   <div class="card">
-    <h2>6. Cambios de esta política</h2>
-    <p>Cualquier cambio futuro en esta política se publicará en esta misma dirección y, cuando afecte de forma significativa a los usuarios, se indicará dentro de la propia aplicación. La versión publicada en esta página es la única válida.</p>
+    <h2>8. Transferencias internacionales</h2>
+    <p>Firebase y Google AdMob son servicios de Google. Cuando sea necesario, Google aplica las garantías previstas en el RGPD para las transferencias internacionales de datos, como el Marco de Privacidad de Datos UE-EE. UU. o las cláusulas contractuales tipo.</p>
   </div>
 
   <div class="card">
-    <h2>7. Contacto</h2>
-    <p>Para cualquier duda sobre protección de datos puede escribirnos al correo electrónico indicado en la ficha de AmperBall en Google Play, o a través del desarrollador <strong>mabero06</strong>.</p>
+    <h2>9. Cambios de esta política</h2>
+    <p>Cualquier cambio futuro se publicará en esta misma dirección. Cuando afecte de forma significativa a los usuarios, se indicará también dentro de la aplicación. La versión publicada en esta página es la única válida.</p>
+  </div>
+
+  <div class="card">
+    <h2>10. Contacto</h2>
+    <p>Para cualquier duda sobre protección de datos: <a href="mailto:mabero06k@gmail.com">mabero06k@gmail.com</a>.</p>
     <p class="muted">AmperBall · © 2026 MARIO (mabero06). Documento disponible de forma pública y estable en esta URL.</p>
   </div>
 
